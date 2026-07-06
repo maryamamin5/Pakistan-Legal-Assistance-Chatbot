@@ -72,29 +72,6 @@ and repeats the question it's currently waiting on.
 
 ---
 
-## Project Structure
-Pakistan_laws_assistance/
-├── main.py                          # entry point, step router
-├── core/
-│   ├── state.py                     # case_state (structured memory) + conversation_history
-│   ├── guardrail.py                 # on-topic / off-topic classifier
-│   └── extractor.py                 # all GPT-based field extraction functions
-├── steps/
-│   ├── incidenttype_1.py            # Step 1
-│   ├── basic_details_2.py           # Step 2
-│   ├── injury_assessment_3.py       # Step 3
-│   ├── propertydamage_4.py          # Step 4
-│   ├── policeinvolvement_5.py       # Step 5
-│   ├── liability_assessment_6.py    # Step 6
-│   ├── evidence_collection_7.py     # Step 7
-│   ├── desired_outcome_8.py         # Step 8
-│   └── legal_analysis_9.py          # Step 9 — final report generation
-├── utils/
-│   └── openai_client.py             # OpenAI client setup
-└── sessions/                        # auto-created — saved case reports (JSON)
-
----
-
 ## Setup
 
 1. Clone the repository and create a virtual environment:
